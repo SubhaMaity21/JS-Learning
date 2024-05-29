@@ -18,3 +18,5 @@ console.log(3
 
 console.log(typeof null)
 console.log(typeof undefined);
+
+
