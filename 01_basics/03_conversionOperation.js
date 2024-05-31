@@ -72,3 +72,37 @@ console.table([m,n])
 /* If used postfix, with operator after operand (for example, m++),
 the increment operator increments and returns the value before incrementing.
 */
+
+
+// +++++++++++++++++++++++  Memory +++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive) , Heap(Non-Primitive)
+
+let myEmail = "subha@mail.com"
+let anotherEmail = myEmail
+
+anotherEmail ="subha2@gmail.com"
+
+console.table([myEmail,anotherEmail])
+
+/*although we changed the value of anotherEmail but the value 
+ of myEmail did not change as it sends the copy to anotherEmail when to declare this is equal to the first one.
+  it's primitive type */
+
+let userOne ={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email ="subha@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+/*
+but in the case of non-primitive(object) the data stored in a heap
+so when the user change the data using another variable it's globally
+changed..
+*/
