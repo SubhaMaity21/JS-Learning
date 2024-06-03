@@ -22,7 +22,7 @@ console.log(Math.abs(-4));//negative to positive
 console.log(Math.round(4.3));
 console.log(Math.ceil(4.3));
 console.log(Math.floor(4.3));
-
+console.log(Math.trunc(133.0999));
 console.log(Math.pow(2,3));
 console.log(Math.sin(30)); //it takes the value in radian
 
