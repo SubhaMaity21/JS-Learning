@@ -50,3 +50,28 @@ const users = [
 
 console.log(users[1].email);
 
+// **********************************************************
+// Object de-structuring
+const course ={
+    courseName:"JS Hindi",
+    courseInstructor:"Hitesh"
+}
+
+const {courseInstructor:instructor} = course //important
+console.log(instructor);
+
+// API
+// JSON
+
+// {
+//     "name":"Subha",
+//     "Course":"Subha",
+//     "Price":"free"
+// }
+
+[
+    {},
+    {}
+]
+
+

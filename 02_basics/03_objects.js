@@ -61,3 +61,4 @@ const prp = Object.getOwnPropertyDescriptor(anotherUser, "email");
 console.log(prp); 
 
 
+
