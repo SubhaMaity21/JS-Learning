@@ -25,3 +25,4 @@ console.log(typeof myObj);
 console.log(typeof heros);
 console.log(typeof myFunction);
 // acually it's function object
+
