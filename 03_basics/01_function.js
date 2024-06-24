@@ -3,7 +3,7 @@ function sayMyName(){
     console.log("U");
     console.log("B");
     console.log("H");
-    console.log("A");
+    // console.log("A");
 }
 
 // sayMyName()
