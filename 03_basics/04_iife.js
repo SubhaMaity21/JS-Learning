@@ -18,4 +18,8 @@
 
 ( (name)=>{
     console.log(`this is ${name}`);
-} )("Subha")
+} )("Subha");
+
+((collage)=>{
+    console.log(`this is ${collage}`);
+})("Jadavpur")
