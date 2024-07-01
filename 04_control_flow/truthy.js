@@ -40,6 +40,20 @@ if(myEmail.length===0){
 // Nullish Coalescing Operator (??): null defined
 
 let dj ;
-dj = null??5;
+// dj = 10??5;
 
-console.log(dj);
+// console.log(dj);
+
+// dj = undefined ?? 16
+// console.log(dj);
+
+
+
+//Terniary Operator
+
+//condition ? true : false
+
+
+const teaPrice = 20
+
+teaPrice >= 80 ? console.log("greter than 80"):console.log("less than 80");
