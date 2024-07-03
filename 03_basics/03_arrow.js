@@ -58,3 +58,9 @@ console.log(addone(6,8));
 const adding = (num1,num2)=>({username:"SUbha"})
 console.log(adding());
 
+
+
+let val1;
+val1 =  5 ?? 6;
+console.log(val1);
+
