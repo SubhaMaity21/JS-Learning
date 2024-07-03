@@ -60,7 +60,12 @@ console.log(adding());
 
 
 
+
 let val1;
 val1 =  5 ?? 6;
 console.log(val1);
+
+const addFive = (a,b)=>(a+b)
+console.log(addFive(6,7));
+
 

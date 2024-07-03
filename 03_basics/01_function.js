@@ -6,7 +6,7 @@ function sayMyName(){
     // console.log("A");
 }
 
-// sayMyName()
+sayMyName()
 
 // function addtwoNumber(number1,number2){  //these are parameters
 //         console.log(number1+number2)
