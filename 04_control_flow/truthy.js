@@ -57,3 +57,4 @@ let dj ;
 const teaPrice = 20
 
 teaPrice >= 80 ? console.log("greter than 80"):console.log("less than 80");
+
