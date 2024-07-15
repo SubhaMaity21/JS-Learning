@@ -47,3 +47,12 @@ myCoding.forEach((item,index)=>{
     
    }
 }) //what if I only want two items
+
+// const newCode = ["Java","python","JS"]
+
+// const value = coding.forEach((item) =>{
+//     console.log(item);
+// })
+
+// console.log(value);  // this wil be undefined
+
