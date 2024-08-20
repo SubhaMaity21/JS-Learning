@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    
+    const body = document.body
+    // body.style.backgroundColor = `rgb(${randomNumber},46,20)`
+
+    // const startChange = function(){
+    // const randomNumberOne = Math.floor(Math.random()*100 + 23 )
+    // const randomNumberTwo = Math.floor(Math.random()*100 )
+    // const randomNumberThree = Math.floor(Math.random()*90 )
+    //     body.style.backgroundColor = `rgb(${randomNumberOne},${randomNumberTwo},${randomNumberThree})`
+
+    // }
+
+    const startChange = function(){
+        const hex = '0123456789ABCDEF'
+        let color = '#'
+        for (let i = 0; i < 6; i++) {
+            color += hex[Math.floor(Math.random()*16)]
+            
+        }
+        console.log(color);
+        body.style.backgroundColor = `${color}`
+    }
+    let intervalID;
+    const startChangingColor = function(){
+        if(!intervalID){
+            intervalID = setInterval(startChange,1000)
+        }
+
+    }
+
+    const stopChangingColor = function(){
+        clearInterval(intervalID)
+        intervalID= null
+    }
+    document.querySelector('#start').addEventListener('click',function(){
+        startChangingColor()
+    })
+    document.querySelector('#stop').addEventListener('click',function(){
+        stopChangingColor()
+    })
+
+</script>
+</html>
