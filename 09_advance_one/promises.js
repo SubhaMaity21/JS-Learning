@@ -95,7 +95,7 @@ async function getUser(){
         console.log(error);
     }
 }
-// getUser()
+getUser()
 
 fetch('https://api.github.com/users/SubhaMaity21')
 .then((response)=>{
