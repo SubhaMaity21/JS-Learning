@@ -32,7 +32,7 @@ function User(userName,loginCount,isSignedIn){
 
 const userOne = new User("Subha",12,true)
 const UserTwo = new  User("JS",30,false)
-console.log(userOne);
+// console.log(userOne);
 console.log(userOne.greetings()); 
 // console.log(UserTwo); 
 

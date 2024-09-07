@@ -62,27 +62,46 @@ Promisefour
 
 
 
-const PromiseFive = new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        let error = true
-        if(!error){
-            resolve({userName:"JS",password:"123"})
-        }else{
-            reject('Error:JS is wrong')
-        }
-    },2000)
-});
+// const PromiseFive = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         let error = true
+//         if(!error){
+//             resolve({userName:"JS",password:"123"})
+//         }else{
+//             reject('Error:JS is wrong')
+//         }
+//     },2000)
+// });
 
+
+// async function consumePromiseFive(){
+//    try{
+//     const response = await PromiseFive
+//     console.log(response);
+//    }catch(err){
+//     console.log(err);
+//    }
+// }
+
+const promiseFIve = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        let error = false
+        if(!error){
+            resolve({username:"DJ",password:123});
+        }else{
+            reject('Error in Js');
+        }
+    },1000)
+})
 
 async function consumePromiseFive(){
-   try{
-    const response = await PromiseFive
-    console.log(response);
-   }catch(err){
-    console.log(err);
-   }
+    try {
+        const response = await promiseFIve
+        console.log(response.username);
+    } catch (error) {
+        console.log(error);
+    }
 }
-
 consumePromiseFive()
 
 
@@ -96,6 +115,21 @@ async function getUser(){
     }
 }
 getUser()
+
+// Import the fetch function if not already imported
+// const fetch = require('node-fetch'); // Assuming you are using Node.js
+
+async function getMe(){
+    try {
+        const response = await fetch('https://api.github.com/users/SubhaMaity21');
+        const data = await response.json();
+        console.log(data.id);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+// getMe();
 
 fetch('https://api.github.com/users/SubhaMaity21')
 .then((response)=>{
